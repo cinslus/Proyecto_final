@@ -1,0 +1,7 @@
+pytest
+pytest-html
+pytest-check
+selenium
+webdriver-manager
+requests
+behave
