@@ -20,7 +20,7 @@ def test_login_invalid_password(driver):
     logger.info("Ingresando los datos de entrada para la prueba.")
     login_Page.login("standard_user","123456") 
     
-    error = login_Page.get_error_password_message()
+    error = login_Page.get_error_login_message()
     assert "Epic sadface: Username and password do not match any user in this service" in error
     
 def test_login_invalid_usuario(driver):
@@ -29,5 +29,5 @@ def test_login_invalid_usuario(driver):
     logger.info("Ingresando los datos de entrada para la prueba.")  
     login_page.login("usuario_incorrecto","secret_sauce")
     
-    error = login_page.get_error_user_message()
+    error = login_page.get_error_login_message()
     assert "Epic sadface: Username and password do not match any user in this service" in error
