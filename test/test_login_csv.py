@@ -11,5 +11,5 @@ def test_login(driver,user):
     if user["valid"] == "true":
         assert "/inventory.html" in driver.current_url, "No se redirigió al inventario"
     else:
-        error = login_page.get_error_password_message() 
+        error = login_page.get_error_login_message() 
         assert "Epic sadface:" in error
