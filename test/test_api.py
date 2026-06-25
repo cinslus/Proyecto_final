@@ -44,7 +44,7 @@ def test_cereate_user():
     assert response.status_code == 201
     #check.equal(response.status_code,201)  - no porque buscamos saber si el estado 200 si no lo es no sirve que siga
     #assert body["email"].count("@") == 1
-    check.equal(body["email"].count("@") == 1)
+    check.equal(body["email"].count("@"), 1)
     #assert "*" in body["password"]
     check.is_in("*",body["password"])
     #assert data["name"],body["name"]
