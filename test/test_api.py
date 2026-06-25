@@ -48,7 +48,7 @@ def test_cereate_user():
     #assert "*" in body["password"]
     check.is_in("*",body["password"])
     #assert data["name"],body["name"]
-    check.equal(data["name"] == body["name"])
+    check.equal(data["name"], body["name"])
     #assert data["email"] == body["email"]
     check.equal(data["email"],body["email"])
     #assert response.elapsed.total_seconds() < 1
