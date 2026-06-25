@@ -20,7 +20,9 @@ Este repositorio contiene un Framework de Automatización de Pruebas E2E (End-to
 
 ## Funcionamiento de las pruebas
 
-- Test login: Verifica que el proceso de autenticacion redirija al usuario a la pagina correcta. Validacion de URL
+- Test login: Pruebas Exitosas: Valida que las credenciales correctas redirijan correctamente a la URL del inventario.
+
+Pruebas Negativas: Controla el comportamiento del sistema ante usuarios incorrectos o contraseñas inválidas verificando los mensajes de error correspondientes.
 
 - Test cart: -Validación de agregado de productos desde el home.
              -Verificación de persistencia de productos en el carrito.
